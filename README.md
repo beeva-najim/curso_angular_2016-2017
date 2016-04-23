@@ -40,7 +40,7 @@ Para poder asistir a los cursos de Angular será necesario:
 
 Seguiremos los siguientes pasos para lanzar la aplicación:
 * Hacemos un fork (desde la aplicación Web de Git) para copiar el repositorio en nuestra cuenta
-* Desde consola de comandos hacemos un clone del repositorio a nuestra carpeta local (git clone https://github.com/beeva-xxxx/curso_angular_2016-2017.git)
+* Desde consola de comandos hacemos un clone del repositorio a nuestra carpeta local ( **git clone https://github.com/beeva-xxxx/curso_angular_2016-2017.git**)
 * Accedemos a la carpeta donde se encuentra el fichero **bower.json**
 * Cambiamos de rama a la que corresponda según el ejercicio (git branch ejercicio-basico, ejercicio-avanzado)
 * Arrancamos el servidor con **grunt serve**

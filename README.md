@@ -1,6 +1,6 @@
 # Curso_angular_2016-2017
 
-** CURSO BÁSICO **
+**CURSO BÁSICO**
 
 **Contenido del bloque teórico:**
 
@@ -19,7 +19,7 @@
 Comenzaremos un ejercicio básico para construir un formulario, utilizando para ello las directivas nativas imprescindibles de Angular. Se trabajará de forma individual.
 
 
-** CURSO AVANZADO **
+**CURSO AVANZADO**
 
 **Contenido del bloque teórico:**
 

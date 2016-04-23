@@ -45,3 +45,9 @@ Seguiremos los siguientes pasos para lanzar la aplicación:
 * Cambiamos de rama a la que corresponda según el ejercicio (git branch ejercicio-basico, ejercicio-avanzado)
 * Arrancamos el servidor con **grunt serve**
 * En cualquier navegador: **http://localhost:9000**
+
+
+**ENLACES DE INTERÉS**
+
+Para instalar las herramientas de Yeoman, un generador de Angular y el resto de elementos necesarios para dejar la estructura preparada (además de los test de prueba), y poder ejecutar un servidor con grunt os dejo un enlace muy interesante:
+https://www.toptal.com/angular-js/your-first-angularjs-app-part-2-scaffolding-building-and-testing

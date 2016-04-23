@@ -49,5 +49,6 @@ Seguiremos los siguientes pasos para lanzar la aplicación:
 
 **ENLACES DE INTERÉS**
 
-Para instalar las herramientas de Yeoman, un generador de Angular y el resto de elementos necesarios para dejar la estructura preparada (además de los test de prueba), y poder ejecutar un servidor con grunt os dejo un enlace muy interesante:
-https://www.toptal.com/angular-js/your-first-angularjs-app-part-2-scaffolding-building-and-testing
+Para instalar las herramientas de Yeoman, un generador de Angular y el resto de elementos necesarios para dejar la estructura preparada (además de los test de prueba), y poder ejecutar un servidor con grunt os dejo un par de enlaces muy interesante:
+     - https://www.toptal.com/angular-js/your-first-angularjs-app-part-2-scaffolding-building-and-testing
+     - https://github.com/angular-fullstack/generator-angular-fullstack

@@ -1,47 +1,12 @@
-# Curso_angular_2016-2017
+# curso-angular20162017
 
-**CURSO BÁSICO**
+This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
+version 0.15.1.
 
-**Contenido del bloque teórico:**
+## Build & development
 
-* Introducción
-* Data binding
-* Controladores
-* Scope
-* Inyección de dependencia
-* Expresiones
-* Directivas nativas
-* Control de errores
-* Buenas prácticas
+Run `grunt` for building and `grunt serve` for preview.
 
-**Contenido del bloque práctico:**
+## Testing
 
-Comenzaremos un ejercicio básico para construir un formulario, utilizando para ello las directivas nativas imprescindibles de Angular. Se trabajará de forma individual.
-
-
-**CURSO AVANZADO**
-
-**Contenido del bloque teórico:**
-
-**Contenido del bloque práctico:**
-
-
-**REQUISITOS TECNOLÓGICOS**
-
-En este repositorio se proporcionará el esqueleto del cual partir para realizar el ejercicio básico. Los alumnos deberán hacerse un Fork de dicho esqueleto.
-
-Para poder asistir a los cursos de Angular será necesario:
-* Traer el ordenador
-* Tener instalados los siguientes programas:
-    * Git
-    * Grunt
-    * NPM (una vez instalado, npm install)
-    * Bower (una vez instalado, bower update)
-
-Seguiremos los siguientes pasos para lanzar la aplicación:
-* Hacemos un fork (desde la aplicación Web de Git) para copiar el repositorio en nuestra cuenta
-* Desde consola de comandos hacemos un clone del repositorio a nuestra carpeta local ( **git clone https://github.com/beeva-xxxx/curso_angular_2016-2017.git**)
-* Accedemos a la carpeta donde se encuentra el fichero **bower.json**
-* Cambiamos de rama a la que corresponda según el ejercicio (git branch ejercicio-basico, ejercicio-avanzado)
-* Arrancamos el servidor con **grunt serve**
-* En cualquier navegador: **http://localhost:9000**
+Running `grunt test` will run the unit tests with karma.

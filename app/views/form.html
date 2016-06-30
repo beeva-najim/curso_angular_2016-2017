@@ -1,0 +1,107 @@
+<div ng-controller="FormCtrl">
+  <form name="form" class="form-horizontal css-form" novalidate>
+    <fieldset>
+      <div style="background-color:{{color}}">
+        <legend>{{titulo}}
+          <input id="color" type="color" name="color" ng-model="color" class="form-control input-md" style="border:solid 2px red; cursor:pointer">
+        </legend>
+        <center>
+          <h4>Accede a nuestra web</h4>
+        </center>
+        <div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="username">Username</label>
+            <div class="col-md-5">
+              <input id="username" name="username" placeholder="Your Username.." class="form-control input-md" type="text" ng-model="username" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="pass">Pass</label>
+            <div class="col-md-5">
+              <input id="pass" type="password" name="pass" placeholder="Any world ?" class="form-control input-md" ng-model="pass" required>
+            </div>
+          </div>
+        </div>
+        <div>
+          <!-- ng-show='radio.tipo!=1' -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="tel">Telf</label>
+            <div class="col-md-5">
+              <input id="tel" type="tel" name="tel" ng-model="tel" placeholder="teléfono..." class="form-control input-md" ng-model="telefono" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="email">Email</label>
+            <div class="input-group col-md-5">
+              <span class="input-group-addon" id="basic-addon1">@</span>
+              <input id="email" type="email" name="email" placeholder="email..." class="form-control input-md" aria-describedby="basic-addon1" ng-model="email" ng-pattern="/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="nacionalidad">Nacionalidad</label>
+            <div class="col-md-2">
+              <select ng-model="seleccion" ng-options="item as item.name for item in paises">
+              </select>
+            </div>
+          </div>
+          <center>
+            <label>Comida favorita</label>
+          </center>
+          <ul class="form-group list-group list-unstyled">
+            <li ng-repeat="item in seleccion.Comidas" class="col-md-3">
+              <label class="control-label" for="item">{{item}}</label>
+              <input ng-click="elegir($event, item)" id="{{item.id}}" type="checkbox" value="{{item.id}}" name='{{item}}' class="form-control input-md" ng-model="comida">
+            </li>
+
+          </ul>
+        </div>
+        <ul class="form-group list-group list-unstyled">
+          <li class="col-md-2"></li>
+          <li class="col-md-2"></li>
+          <li class="col-md-2">
+            <button type="button" class="btn btn-primary btn-large" ng-click="enviar(form)">Enviar</button>
+          </li>
+          <li class="col-md-2">
+            <button type="reset" class="btn btn-primary btn-large" ng-click="borrar(form)">Borrar</button>
+          </li>
+        </ul>
+      </div>
+    </fieldset>
+
+    <div ng-repeat="item in form.$error.required" ng-show='invalido && form.$error.required' class="alert alert-danger" role="alert">Ups! rellene el <b>{{item.$name}}</b>
+      {{item}}
+      <p ng-show="item.$error.pattern"> Error de formato{{enviado}} --> {{item}}</p>
+    </div>
+    <div ng-show='invalido && !marcado' class="alert alert-danger" role="alert">
+      <b>Ups! marca una comida minimo</b>
+    </div>
+  </form>
+
+
+  <!-- <div ng-controller="ModalDemoCtrl">
+    <script type="text/ng-template" id="myModalContent.html">
+      <div class="modal-header">
+        <h3 class="modal-title">I'm a modal!</h3>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li ng-repeat="item in items">
+            <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item }}</a>
+          </li>
+        </ul>
+        Selected: <b>{{ selected.item }}</b>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+      </div>
+    </script>
+
+    <button type="button" class="btn btn-default" ng-click="open()">Open me!</button>
+    <button type="button" class="btn btn-default" ng-click="open('lg')">Large modal</button>
+    <button type="button" class="btn btn-default" ng-click="open('sm')">Small modal</button>
+    <button type="button" class="btn btn-default" ng-click="toggleAnimation()">Toggle Animation ({{ animationsEnabled }})</button>
+    <div ng-show="selected">Selection from a modal: {{ selected }}</div>
+  </div> -->
+
+</div>

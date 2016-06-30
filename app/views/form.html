@@ -61,47 +61,17 @@
           <li class="col-md-2">
             <button type="button" class="btn btn-primary btn-large" ng-click="enviar(form)">Enviar</button>
           </li>
-          <li class="col-md-2">
-            <button type="reset" class="btn btn-primary btn-large" ng-click="borrar(form)">Borrar</button>
-          </li>
         </ul>
       </div>
     </fieldset>
-
-    <div ng-repeat="item in form.$error.required" ng-show='invalido && form.$error.required' class="alert alert-danger" role="alert">Ups! rellene el <b>{{item.$name}}</b>
-      {{item}}
-      <p ng-show="item.$error.pattern"> Error de formato{{enviado}} --> {{item}}</p>
-    </div>
-    <div ng-show='invalido && !marcado' class="alert alert-danger" role="alert">
+    <p ng-show="form.email.$invalid && enviado" class="alert alert-danger"> Error de formato --> {{form.email.$name}}</p>
+    <p ng-show="form.username.$invalid && enviado" class="alert alert-danger"> Error de formato --> {{form.username.$name}}</p>
+    <p ng-show="form.pass.$invalid && enviado" class="alert alert-danger"> Error de formato --> {{form.pass.$name}}</p>
+    <p ng-show="form.tel.$invalid && enviado" class="alert alert-danger"> Error de formato --> {{form.tel.$name}}</p>
+    <div ng-show='enviado && !marcado' class="alert alert-danger" role="alert">
       <b>Ups! marca una comida minimo</b>
     </div>
   </form>
-
-
-  <!-- <div ng-controller="ModalDemoCtrl">
-    <script type="text/ng-template" id="myModalContent.html">
-      <div class="modal-header">
-        <h3 class="modal-title">I'm a modal!</h3>
-      </div>
-      <div class="modal-body">
-        <ul>
-          <li ng-repeat="item in items">
-            <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item }}</a>
-          </li>
-        </ul>
-        Selected: <b>{{ selected.item }}</b>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
-        <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
-      </div>
-    </script>
-
-    <button type="button" class="btn btn-default" ng-click="open()">Open me!</button>
-    <button type="button" class="btn btn-default" ng-click="open('lg')">Large modal</button>
-    <button type="button" class="btn btn-default" ng-click="open('sm')">Small modal</button>
-    <button type="button" class="btn btn-default" ng-click="toggleAnimation()">Toggle Animation ({{ animationsEnabled }})</button>
-    <div ng-show="selected">Selection from a modal: {{ selected }}</div>
-  </div> -->
+  <div ng-controller="ModalDemoCtrl"></div>
 
 </div>

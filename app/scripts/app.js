@@ -16,8 +16,9 @@ var moduleAngular = angular.module('cursoAngular20162017App', [
     'ngSanitize',
     'ngTouch',
     'ui.bootstrap'
+
   ])
-  .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+  .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/inicio', {
         templateUrl: 'views/main.html',
